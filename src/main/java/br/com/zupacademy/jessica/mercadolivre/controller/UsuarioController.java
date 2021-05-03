@@ -1,5 +1,6 @@
 package br.com.zupacademy.jessica.mercadolivre.controller;
 
+import br.com.zupacademy.jessica.mercadolivre.UsuarioResponse;
 import br.com.zupacademy.jessica.mercadolivre.model.Usuario;
 import br.com.zupacademy.jessica.mercadolivre.repository.UsuarioRepository;
 import br.com.zupacademy.jessica.mercadolivre.requests.CadastrarUsuarioRequest;
@@ -23,6 +24,7 @@ public class UsuarioController {
     @PostMapping
     public ResponseEntity<?> cadastrarUsuario(@Valid @RequestBody CadastrarUsuarioRequest request){
         Usuario usuario = repository.save(request.toModel());
-        return new ResponseEntity<>(usuario, HttpStatus.CREATED);
+        UsuarioResponse response = new UsuarioResponse(usuario);
+        return new ResponseEntity<>(response, HttpStatus.CREATED);
     }
 }

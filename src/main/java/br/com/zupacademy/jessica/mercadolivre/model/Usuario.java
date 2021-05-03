@@ -1,6 +1,7 @@
 package br.com.zupacademy.jessica.mercadolivre.model;
 
 import org.hibernate.validator.constraints.Length;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -46,6 +47,6 @@ public class Usuario {
 
     public Usuario(String login, String senha) {
         this.login = login;
-        this.senha = senha;
+        this.senha = new BCryptPasswordEncoder().encode(senha);
     }
 }
