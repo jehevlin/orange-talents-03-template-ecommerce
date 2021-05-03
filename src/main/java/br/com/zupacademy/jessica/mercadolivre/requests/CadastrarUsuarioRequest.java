@@ -1,6 +1,6 @@
 package br.com.zupacademy.jessica.mercadolivre.requests;
 
-import br.com.zupacademy.jessica.mercadolivre.model.Usuario;
+import br.com.zupacademy.jessica.mercadolivre.models.Usuario;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;

@@ -1,6 +1,6 @@
-package br.com.zupacademy.jessica.mercadolivre;
+package br.com.zupacademy.jessica.mercadolivre.responses;
 
-import br.com.zupacademy.jessica.mercadolivre.model.Usuario;
+import br.com.zupacademy.jessica.mercadolivre.models.Usuario;
 
 public class UsuarioResponse {
 

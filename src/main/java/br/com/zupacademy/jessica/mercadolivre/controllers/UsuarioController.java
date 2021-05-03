@@ -1,8 +1,8 @@
-package br.com.zupacademy.jessica.mercadolivre.controller;
+package br.com.zupacademy.jessica.mercadolivre.controllers;
 
-import br.com.zupacademy.jessica.mercadolivre.UsuarioResponse;
-import br.com.zupacademy.jessica.mercadolivre.model.Usuario;
-import br.com.zupacademy.jessica.mercadolivre.repository.UsuarioRepository;
+import br.com.zupacademy.jessica.mercadolivre.responses.UsuarioResponse;
+import br.com.zupacademy.jessica.mercadolivre.models.Usuario;
+import br.com.zupacademy.jessica.mercadolivre.repositories.UsuarioRepository;
 import br.com.zupacademy.jessica.mercadolivre.requests.CadastrarUsuarioRequest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

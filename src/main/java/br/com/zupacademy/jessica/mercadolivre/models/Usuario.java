@@ -1,6 +1,5 @@
-package br.com.zupacademy.jessica.mercadolivre.model;
+package br.com.zupacademy.jessica.mercadolivre.models;
 
-import org.hibernate.validator.constraints.Length;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.persistence.Entity;
