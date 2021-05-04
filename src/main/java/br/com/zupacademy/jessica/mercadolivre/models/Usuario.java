@@ -1,6 +1,5 @@
 package br.com.zupacademy.jessica.mercadolivre.models;
 
-import br.com.zupacademy.jessica.mercadolivre.requests.validators.MustBeUnique;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 import javax.persistence.Entity;
